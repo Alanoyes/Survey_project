@@ -1,0 +1,21 @@
+body {
+	background: #08495E;
+	font-family: 'Roboto Slab', serif;
+}
+
+#form {
+	background: #48D489;
+	margin-bottom: 20px;
+}
+
+h1 {
+	text-align: center;
+	margin: 25px;
+	font-family: Shrikhand;
+	color: black;
+}
+
+#id {
+	margin: auto;
+	text-align: center;
+}

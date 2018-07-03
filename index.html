@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="survey.css">
+
+<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+</head>
+<body>
+
+<h1 id="title">Survey Form</h1>
+
+<div class="container" id="form">
+	<p class="text-center" id="description">Let us know how we can improve our bar</p>
+
+	<form id="survey-form">
+		<div class="row">
+			<div class="col-sm-6 text-right">
+			<label for="name" id="name-label">*Name:</label>
+			</div>
+			<div class="col-sm-6">
+			<input type="text" name="name" id="name" placeholder="Enter your name" required> 
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 text-right">
+			<label for="email" id="email-label">*Email:</label>
+			</div>
+			<div class="col-sm-6">
+			<input type="email" name="email" id="email" placeholder="Enter your Email" required>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 text-right">
+			<label for="number" id="number-label">*Age:</label>
+			</div>
+			<div class="col-sm-6">
+			<input type="number" name="age" min="21" max="105" placeholder="Age" id="number">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 text-right">
+			<label for="purpose">Why do you usually visit our bar?</label>
+			</div>
+			<div class="col-sm-6">
+			<select name="purpose" id="dropdown">
+				<option disabled selected>Pick One</option>
+				<option value="dance">To dance</option>
+				<option value="drunk">To get drunk</option>
+				<option value="friends">Hang with friends</option>
+				<option value="dating">Meet singles</option>
+			</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 text-right">
+			<div>How likely is it that you would recommend our bar to a friend?</div>
+			</div>
+			<div class="col-sm-6">
+			<label for="definitely">Definitely</label>
+				<input type="radio" name="recommend" value="definitely" id="definitely"><br>
+			<label for="maybe">Maybe</label>
+				<input type="radio" name="recommend" id="maybe" value="maybe"><br>
+			<label for="notlikely">Not Likely</label>
+				<input type="radio" name="recommend" id="notlikely" value="notlikely"><br>
+			<label for="no">No</label>
+				<input type="radio" name="recommend" id="no" value="no"><br>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 text-right">
+			<label for="favorite">What is your favorite part of our bar?</label>
+			</div>
+			<div class="col-sm-6">
+			<select name="favorite" id="favorite">
+				<option selected disabled>Pick one</option>
+				<option value="drinks">The Drinks</option>
+				<option value="music">The Music</option>
+				<option value="atmosphere">The Atmosphere</option>
+				<option value="billiards">Billiards</option>
+				<option value="outdoor">The Outdoor Area</option>
+			</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 text-right">
+			<div>What would you like to see at our bar?</div>
+			</div>
+			<div class="col-sm-6">
+				<label for="djs">Live Djs</label>
+				<input type="checkbox" name="improvements" id="djs" value="djs"><br>
+				<label for="bands">Live Bands</label>
+				<input type="checkbox" name="improvements" id="bands" value="bands"><br>
+				<label for="specials">Drink Specials</label>
+				<input type="checkbox" name="improvements" id="specials" value="specials"><br>
+				<label for="themes">Themed Nights</label>
+				<input type="checkbox" name="improvements" id="themes" value="themes"><br>
+				<label for="lasers">LASERS!!!</label>
+				<input type="checkbox" name="improvements" id="lasers" value="lasers"><br>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 text-right">
+			<label for="comments">Any Comments or Suggestions?</label>
+			</div>
+			<div class="col-sm-6">
+			<textarea name="comments" id="comments" rows="5" cols="30">Write Comments or Suggestions Here</textarea><br>
+			</div>
+		</div>
+		<br>
+			<div class="text-center">
+			<button type="submit" class="btn btn-primary" value="submit" id="submit">Submit</button>
+			</div>
+		<br>
+	</form>
+</div>
+</body>
+</html>
